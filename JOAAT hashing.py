@@ -1,6 +1,7 @@
 
 def encrypt(bytearray_phrase: bytearray) -> str:
     hashing: int = 0
+    print(bytearray_phrase)
     for i in range(len(bytearray_phrase)):
         hashing += bytearray_phrase[i]
         hashing &= 0xFFFFFFFF
